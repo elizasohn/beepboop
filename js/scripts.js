@@ -27,9 +27,14 @@ $(document).ready(function(){
 
     for (var i = 0; i <= numberInput; i++){
       number.push(i);
-
     }
-  numberstring = number.join('');
+
+    for (var i = 0; i <= number.length; i++){
+      if (number.includes(10)) {
+        number.splice((number.indexOf(10)), 1, "Beep!");
+      }
+    }
+  numberstring = number.join(", ");
   console.log(numberstring);
   })
 
