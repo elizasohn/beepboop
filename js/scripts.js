@@ -1,41 +1,52 @@
 
-// userInput to counted out number
-// for (var i = 0; i <= numberInput; i++) {
-//   console.log("hi");
-//   var number = [];
-//   number.push[i];
-// }
-// console.log(number);
-
-// if (number.includes(3)) {
-// return("I'm sorry Dave, I'm afraid I can't do that");
-// }
-// else if (number.includes(2)){
-// change all numbers to BOOP
-// }
-// else if (number includes(1)){
-// change all numbers to BEEP
-// }
-//
-
 
 $(document).ready(function(){
   $("form#numberator").submit(function(event){
     event.preventDefault();
     var numberInput = parseInt($("input#numberInput").val());
-    var number = [];
+    var numbers = [];
+    var ones = ["1", "10"];
 
-    for (var i = 0; i <= numberInput; i++){
-      number.push(i);
+    function contains(number, digit) {
+        if (number < 0) { // make sure negatives are dealt with properly, alternatively replace this if statement with number = Math.abs(number)
+            number *= -1;
+        }
+        if (number == digit) { // this is to deal with the number=0, digit=0 edge case
+            return true;
+        }
+        while (number != 0) { // stop once all digits are cut off
+            if (number % 10 == digit) { // check if the last digit matches
+                return true;
+            }
+            number = Math.floor(number / 10); // cut off the last digit
+        }
+        return false;
     }
 
-    for (var i = 0; i <= number.length; i++){
-      if (number.includes(10)) {
-        number.splice((number.indexOf(10)), 1, "Beep!");
+    // userInput to counted out number
+    for (var i = 0; i <= numberInput; i++){
+      numbers.push(i);
+    }
+    //
+    for (var i = 0; i <= numberInput; i++){
+      if ((numbers).contains((numbers[i]), 1)) {
+        (numbers.splice(i, 1, "Beep!"));
       }
     }
-  numberstring = number.join(", ");
+    // numbers = numbers.map(String);
+
+
+    // for (var i = 0; i <numbers.length; i++){
+    //   if (ones.includes(numbers[i])); {
+    //     numbers.splice(i, 1, "Beep!");
+    //   }
+    // }
+
+
+
+  numberstring = numbers.join(", ");
   console.log(numberstring);
+    console.log(numbers);
   })
 
 
