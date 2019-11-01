@@ -1,10 +1,12 @@
-var number = [];
 
-userInput to counted out number
-for (var i = 0; i <= userInput; i++) {
-  number.push[i];
-}
-console.log(number);
+// userInput to counted out number
+// for (var i = 0; i <= numberInput; i++) {
+//   console.log("hi");
+//   var number = [];
+//   number.push[i];
+// }
+// console.log(number);
+
 // if (number.includes(3)) {
 // return("I'm sorry Dave, I'm afraid I can't do that");
 // }
@@ -18,7 +20,20 @@ console.log(number);
 
 
 $(document).ready(function(){
-  
+  $("form#numberator").submit(function(event){
+    event.preventDefault();
+    var numberInput = parseInt($("input#numberInput").val());
+    var number = [];
+
+    for (var i = 0; i <= numberInput; i++){
+      number.push(i);
+
+    }
+  numberstring = number.join('');
+  console.log(numberstring);
+  })
+
+
 
 
 
