@@ -11,6 +11,7 @@
 // }
 
 
+
 $(document).ready(function(){
   $("form#numberator").submit(function(event){
     event.preventDefault();
@@ -22,9 +23,21 @@ $(document).ready(function(){
       console.log(numbers);
     };
     var numberStr = numbers.join(", ");
-    replacedStr = numberStr.replace(/1\d/g, "Beep!");
-    console.log(replacedStr);
 
+    if (numberStr.includes("2")) {
+      numberStr = numberStr.replace(/2[0-9]|[0-9]2|2/g, "Boop!");
+    }
+
+    // if (numberStr.includes("3")) {
+    //   numberStr = numberStr.replace(/^3/g, "I'm sorry Dave, I'm afraid I can't do that.")
+    //
+    // }
+
+
+    //
+    // replacedStr = numberStr.replace(/1\d/g, "Beep!");
+    // console.log(replacedStr);
+console.log(numberStr);
     // var result = ones(numberInput)
     // $("ul").html("<li>" + result + "</li>")
     //numberstring = numbers.join(", ");
