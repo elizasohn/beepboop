@@ -35,10 +35,10 @@ $(document).ready(function(){
     //     return false;
     // }
     //
-    // // userInput to counted out number
-    // for (var i = 0; i <= numberInput; i++){
-    //   numbers.push(i);
-    // }
+    // userInput to counted out number
+    for (var i = 0; i <= numberInput; i++){
+      numbers.push(i);
+    }
     // //
 
     // numbers = numbers.map(String);
