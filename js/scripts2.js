@@ -1,15 +1,24 @@
 
+response[3] = "I'm sorry, Dave. I'm afraid I can't do that."
+response[2] = '"Boop!"'
+response[1] = "Beep!"
 
-// var index = numbers.indexOf(1);
+for (var i = 3, i > 0; i--);
+  if (numberStr.includes("i")) {
+    numberStr = numberStr.replace(/i[0-9]|[0-9]i|i/g, response[i]);
+
+
+
 //
-// if index
-//
-//
-//
-// for (var i = 0; i <= numberInput; i++){
-//   if numbers[i] .replace(/[0-9]/g, "X")
+// if (numberStr.includes("3")) {
+//   numberStr = numberStr.replace(/3[0-9]|[0-9]3|3/g, "I'm sorry, Dave. I'm afraid I can't do that.");
 // }
-
+// if (numberStr.includes("2")) {
+//   numberStr = numberStr.replace(/2[0-9]|[0-9]2|2/g, "Boop!");
+// }
+// if (numberStr.includes("1")) {
+//   numberStr = numberStr.replace(/1[0-9]|[0-9]1|1/g, "Beep!");
+// }
 
 
 $(document).ready(function(){
@@ -24,9 +33,16 @@ $(document).ready(function(){
     };
     var numberStr = numbers.join(", ");
 
-    if (numberStr.includes("2")) {
-      numberStr = numberStr.replace(/2[0-9]|[0-9]2|2/g, "Boop!");
-    }
+//this reg ex code is working, trying it in a for loop
+    // if (numberStr.includes("2")) {
+    //   numberStr = numberStr.replace(/2[0-9]|[0-9]2|2/g, "Boop!");
+    // }
+
+
+
+
+
+
 
     // if (numberStr.includes("3")) {
     //   numberStr = numberStr.replace(/^3/g, "I'm sorry Dave, I'm afraid I can't do that.")
