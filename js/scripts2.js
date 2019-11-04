@@ -11,6 +11,13 @@ var numbers = [];
 //         numberStr = numberStr.replace(/i[0-9]|[0-9]i|i/g, response[i]);
 //       }
 // }
+// another for loop that doesn't work
+// for (var i = 0; i <= numberInput; i++){
+//   if ((numbers).contains((numbers[i]), 1)) {
+//     (numbers.splice(i, 1, "Beep!"));
+//   }
+// }
+
 
 function numberate(num) {
 
@@ -38,7 +45,7 @@ $(document).ready(function(){
 
     var result = numberate(numberInput);
 
-    $("ul").html("<li>" + result + "</li>")
+    $("ul").append("<li>" + result + "</li>")
 
   });
 });
