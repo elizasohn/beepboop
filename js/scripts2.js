@@ -36,6 +36,9 @@ function numberate(num) {
     numberStr = numberStr.replace(/1[0-9]|[0-9]1|1/g, "Beep!");
   }
   return numberStr;
+  //doesn't work to turn back to array
+  // numberArray = numberStr.split('');
+  // return numberArray;
 }
 
 $(document).ready(function(){
@@ -45,7 +48,10 @@ $(document).ready(function(){
 
     var result = numberate(numberInput);
 
-    $("ul").append("<li>" + result + "</li>")
+    $("ul").html("<li>" + result + "</li>")
+    $(".resultArea").show();
+    // doesn't work
+    //$("form#inputForm")[0].reset();
 
   });
 });

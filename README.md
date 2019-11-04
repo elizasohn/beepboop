@@ -36,7 +36,7 @@ _This is a website that takes a number from the user and returns a range of numb
 * _Open Chrome_
 * _Look at the Page_
 * _Read the Page_
-* _Select your Answers_
+* _Enter a Number_
 * _Enjoy the Page_
 * _Give Eliza a good grade_
 
