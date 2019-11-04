@@ -40,6 +40,12 @@ _This is a website that takes a number from the user and returns a range of numb
 * _Enjoy the Page_
 * _Give Eliza a good grade_
 
+## Known Bugs
+
+* _Only works with numbers under 100._
+* _Page does not refresh upon new number entry._
+* _Output does not display as list items_
+
 ## Support and contact details
 
 _Eliza.Sohn@gmail.com_
