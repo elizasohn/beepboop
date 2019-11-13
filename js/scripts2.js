@@ -1,5 +1,5 @@
 
-var numbers = [];
+
 // var response[1] = "Beep!";
 // var response[2] = "Boop!";
 // var response[3] = "I'm Sorry, Dave. I'm afraid I can't do that.";
@@ -20,6 +20,8 @@ var numbers = [];
 
 
 function numberate(num) {
+
+  var numbers = [];
 
   for (var i = 0; i <= num; i++){
     numbers.push(i);
